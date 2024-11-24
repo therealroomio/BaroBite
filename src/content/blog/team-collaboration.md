@@ -21,6 +21,6 @@ At Foxi, we believe that effective team collaboration is key to achieving great 
 
 > The strength of the team is each individual member. The strength of each member is the team.
 
-Effective collaboration leads to better decision-making, faster problem-solving, and a more engaged team. With these new features, Foxi is more equipped than ever to help your team succeed.
+Effective collaboration leads to better decision-making, faster problem-solving, and a more engaged team. With these new features,AiWifiis more equipped than ever to help your team succeed.
 
 Start using these features today and see the difference in your team's productivity and collaboration.

@@ -8,21 +8,25 @@ import Features from '../components/blocks/features/FeatureCards.astro'
 import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
 import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
+import AIDemo from '../components/blocks/demo/AIDemo.astro'
+
+// Import the config
+import { configData } from '../config/config';
 
 // Content
 // - Testimonial background
 import testimonialBackground from '../assets/testimonial-bg-01.webp'
 // - SEO
 const SEO = {
-	title: 'Foxi | Your Productivity Toolkit',
-	description:
-		'Foxi is a powerful productivity toolkit designed to enhance your workflow and boost your productivity. With features like analytics, security, and integrations, Foxi is the perfect solution for your business.'
+	title: configData.siteTitle,
+	description: configData.siteDescription
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
 	<Features />
+	<AIDemo />
 	<Testimonial bg={testimonialBackground} bgPosition="right" />
 	<HighlightBlocks />
 	<CTA />

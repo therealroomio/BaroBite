@@ -11,7 +11,7 @@ import BlogPostHero from '../components/blocks/blog/BlogPostHero.astro'
 // Content
 // - SEO
 const SEO = {
-	title: `${frontmatter.title} | Foxi`,
+	title: `${frontmatter.title} | BaroBite`,
 	description: `${frontmatter.description}`
 }
 ---
@@ -31,6 +31,10 @@ const SEO = {
 	<div class="post-body basic-text basic-text--lg">
 		<slot />
 	</div>
+
+	<footer>
+		Published by BaroBite Team
+	</footer>
 </Layout>
 
 <style>

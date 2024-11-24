@@ -1,0 +1,42 @@
+---
+import { configData } from '../config/config'
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import TextImage from '../components/blocks/basic/TextImage.astro'
+import Feature from '../components/blocks/features/FeatureList.astro'
+import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+const SEO = {
+    title: `${configData.siteTitle} | WiFi-Powered Social Media Growth`,
+    description: 'Grow your social media following organically through your guest WiFi. Convert WiFi users into social media followers with BaroBite.'
+}
+
+const header = {
+    title: 'Boost Your <strong>Social Media</strong> Presence',
+    text: 'Turn WiFi users into loyal social media followers with our automated engagement platform.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+    <Hero title={header.title} text={header.text} />
+    <Feature
+        title="Social Growth Features"
+        text="Expand your social media reach through WiFi"
+        data={[
+            {
+                title: "One-Click Following",
+                text: "Make it easy for customers to follow your social profiles"
+            },
+            {
+                title: "Multi-Platform Growth",
+                text: "Grow followers across all major social networks"
+            },
+            {
+                title: "Engagement Analytics",
+                text: "Track follower growth and engagement metrics"
+            }
+        ]}
+    />
+    <CTA />
+</Layout>

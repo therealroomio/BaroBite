@@ -13,23 +13,24 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 
 // Content
 // - SEO
+import { configData } from '../config/config';
+
 const SEO = {
-	title: 'Foxi | Pricing made simple',
-	description:
-		'Discover the perfect SaaS pricing plan for your business. From startups to enterprises, our scalable solutions offer unparalleled features and 24/7 support.'
+	title: `${configData.siteTitle} | Flexible Pricing Plans`,
+	description: 'Choose the perfect AI-powered marketing automation plan for your business. Boost your digital presence with BaroBite.'
 }
 // - Page Header
 const header = {
-	title: 'Choose the plan that works for <strong>your</strong> needs',
-	text: 'All plans come with a 30-day money-back guarantee.'
+	title: 'Choose the plan that fits your <strong>marketing goals</strong>',
+	text: 'All plans come with a 14-day free trial. No credit card required.'
 }
 // - Testimonial data
 import testimonialBackground from '../assets/testimonial-bg-02.webp'
 const testimonialData = {
 	blockquote:
-		"Foxi isn't just an app—it's like having a mischievous yet brilliant sidekick for your business. It streamlines tasks and also cracks jokes to keep spirits high",
-	figcaption: 'Max Widgetson',
-	cite: ' CEO, Widgetify Ltd'
+		"BaroBite has revolutionized our marketing efforts. The AI-driven insights and automation have significantly boosted our social media engagement and email conversions.",
+	figcaption: 'Sarah Johnson',
+	cite: 'Marketing Director, TechInnovate Inc.'
 }
 ---
 

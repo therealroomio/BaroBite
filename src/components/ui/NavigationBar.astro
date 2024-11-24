@@ -59,7 +59,7 @@ const savedNavActions = navActions.map((action) => ({
 			</button>
 
 			<!-- Navigation links -->
-			<ul role="menubar" aria-label="Select page" class="header__menu">
+			<ul role="menubar" aria-label="Select page" class="header__menu rounded-lg">
 				{
 					navItems.map((item) => (
 						<li role="none" class="header__menu-item">
@@ -122,13 +122,13 @@ const savedNavActions = navActions.map((action) => ({
 		@apply sticky top-0 z-20 w-full animate-fadeInShadowLight [animation-range:0%_20rem] [animation-timeline:scroll()] before:absolute after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full lg:after:hidden dark:animate-fadeInShadowDark dark:[animation-range:0%_20rem] dark:[animation-timeline:scroll()];
 	}
 	.header:before {
-		@apply block h-full w-full bg-white/90 lg:backdrop-blur-sm dark:bg-neutral-900/90;
+		@apply block h-full w-full bg-white/90 lg:backdrop-blur-sm dark:bg-neutral-900/90 backdrop-blur-sm;
 	}
 	.header__container {
 		@apply relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem];
 	}
 	.header__logo {
-		@apply flex flex-auto items-center gap-2 whitespace-nowrap py-3 font-headings text-2xl font-black tracking-wider focus:outline-none;
+		@apply flex flex-auto items-center gap-2 whitespace-nowrap py-3 font-headings text-2xl font-black focus:outline-none;
 	}
 	.header__nav {
 		@apply flex h-[5.5rem] items-stretch gap-6 font-medium text-neutral-700 lg:justify-between dark:text-neutral-50;

@@ -7,38 +7,42 @@ import Hero from '../components/blocks/hero/PageHeader.astro'
 import FAQ from '../components/blocks/FAQ/FaqSticky.astro'
 import TextImage from '../components/blocks/basic/TextImage.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
+import Basic from '../components/blocks/FAQ/Basic.astro'
 
 // Data
 import faqData from '../data/json-files/faqData.json'
 // - FAQ Categories
-const faqPricing = faqData.filter((faq) => faq.category === 'pricing')
-const faqIntegrations = faqData.filter((faq) => faq.category === 'integrations')
-
+const faqAIMarketing = faqData.filter((faq) => faq.category === 'ai-marketing')
+const faqSocialGrowth = faqData.filter((faq) => faq.category === 'social-growth')
+const faqEmailAutomation = faqData.filter((faq) => faq.category === 'email-automation')
 // Content
 import faqImage1 from '../assets/faq/faq-01.png'
 // - SEO
+// Import the config
+import { configData } from '../config/config';
+
+
 const SEO = {
-	title: 'Foxi | Get Your Questions Answered with a Smile',
-	description:
-		'Dive into the Foxi FAQ Funhouse to get answers to all your questions about pricing, integrations, features, and more. Discover how Foxi can make your work life more productive and enjoyable.'
+	title: `${configData.siteTitle} | Frequently Asked Questions`,
+	description: 'Get answers to common questions about AiWifi\'s AI-powered marketing automation platform.'
 }
 // - Page Header
 const header = {
-	title: 'Get Answers to Your <strong>Foxi</strong> Questions.',
-	text: 'Find answers to common questions about Foxi '
+	title: 'Get Answers to Your <strong>AiWifi</strong> Questions',
+	text: 'Find answers to common questions about our AI-powered marketing automation platform.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
 	<FAQ
-		title="Understanding Our Pricing Plans"
-		text="Get all the details on Foxi’s pricing plans. Learn about the costs, discounts, and subscription options to find the best plan that fits your needs and budget."
-		data={faqPricing}
+		title="AI-Driven Marketing"
+		text="Learn how our AI technology optimizes your marketing strategies and campaigns."
+		data={faqAIMarketing}
 	/>
 	<TextImage
-		title="Why Foxi’s Pricing Plans Offer Great Value"
-		text="At Foxi, we believe in providing exceptional value at every price point. Our pricing plans are designed to cater to a variety of needs, from individuals and small teams to large enterprises. Each plan includes access to our powerful features, seamless integrations, and top-notch customer support. "
+		title="Boost Your Social Media Presence"
+		text="Discover how AiWifi's AI-powered tools can help you grow your social media following and engagement."
 		image={faqImage1}
 		mobileImage={faqImage1}
 		imagePosition="left"
@@ -46,9 +50,10 @@ const header = {
 		classes="bg-neutral-50 dark:bg-neutral-900 lg:!py-64"
 	/>
 	<FAQ
-		title="Integrations Made Easy"
-		text="Discover how Foxi seamlessly integrates with your favorite tools and platforms. From Google Calendar to Slack, find out how to connect and enhance your productivity with powerful integrations."
-		data={faqIntegrations}
+		title="Email Automation Made Easy"
+		text="Explore how our AI-driven email automation can improve your email marketing campaigns and boost conversions."
+		data={faqEmailAutomation}
 	/>
 	<CTA />
+	<Basic />
 </Layout>

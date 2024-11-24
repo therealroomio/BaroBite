@@ -10,54 +10,56 @@ import CTA from '../components/blocks/CTA/BasicDark.astro'
 // Data
 import featuresData from '../data/json-files/featuresData.json'
 // - Feature Categories
+const featuresAIMarketing = featuresData.filter((feature) => feature.category === 'AI Marketing')
+const featuresSocialGrowth = featuresData.filter((feature) => feature.category === 'Social Growth')
+const featuresEmailAutomation = featuresData.filter((feature) => feature.category === 'Email Automation')
 const featuresAnalytics = featuresData.filter((feature) => feature.category === 'Analytics')
-const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
-const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
 const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
-const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
+
+// Import the config
+import { configData } from '../config/config';
 
 // Content
 // - SEO
 const SEO = {
-	title: 'Foxi | Features to Boost Productivity & Security',
-	description:
-		"Explore Foxi's powerful features designed to enhance productivity, ensure top-notch security, and integrate seamlessly with your favorite tools. Join thousands of satisfied users and transform your workflow with Foxi today!"
+	title: `${configData.siteTitle} | AI-Powered Marketing Automation Features`,
+	description: 'Discover how AiWifi\'s AI-powered features can revolutionize your marketing, social media growth, and email automation.'
 }
 // - Page Header
 const header = {
-	title: 'Why you and your team will <strong>love</strong> foxi.',
-	text: 'Streamline your tasks, protect your data, and enjoy working with our tools!'
+	title: 'Supercharge your marketing with <strong>AI-powered</strong> automation.',
+	text: 'Explore our cutting-edge features designed to boost your digital presence and drive customer engagement.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
 	<Feature
-		title="Insightful Analytics"
-		text="Delve into your data with precision and uncover actionable insights."
+		title="AI-Driven Marketing"
+		text="Leverage the power of AI to optimize your marketing strategies and campaigns."
+		data={featuresAIMarketing}
+	/>
+	<Feature
+		title="Social Media Growth"
+		text="Expand your social media presence and engage with your audience more effectively."
+		data={featuresSocialGrowth}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<Feature
+		title="Email Automation"
+		text="Create personalized email campaigns that convert with our AI-powered email automation."
+		data={featuresEmailAutomation}
+	/>
+	<Feature
+		title="Advanced Analytics"
+		text="Gain deep insights into your marketing performance with our comprehensive analytics tools."
 		data={featuresAnalytics}
-	/>
-	<Feature
-		title="Efficiency Unleashed"
-		text="Streamline tasks and focus on what matters with tools designed to boost your productivity."
-		data={featuresSecurity}
 		classes="bg-neutral-50 dark:bg-neutral-900"
 	/>
 	<Feature
-		title="Ultimate Data Protection"
-		text="Keep your data safe with top-notch security measures and real-time threat detection."
-		data={featuresProductivity}
-	/>
-	<Feature
-		title="Seamless Connectivity"
-		text="Effortlessly connect your favorite apps and automate workflows for a smoother workday."
+		title="Seamless Integrations"
+		text="Connect AiWifi with your favorite tools and platforms for a streamlined workflow."
 		data={featuresIntegrations}
-		classes="bg-neutral-50 dark:bg-neutral-900"
-	/>
-	<Feature
-		title="24/7 Expert Help"
-		text="Our friendly support team is always here to assist you with any questions or issues."
-		data={featuresSupport}
 	/>
 	<CTA />
 </Layout>

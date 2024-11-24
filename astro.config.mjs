@@ -7,7 +7,10 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-theme-one.vercel.app/",
+  site: "https://valeofx.com/",
+  server: {
+    host: '0.0.0.0',
+  },
   integrations: [
     tailwind(),
     icon(),
@@ -18,4 +21,7 @@ export default defineConfig({
       },
     }),
   ],
+  devToolbar: {
+    enabled: false,
+  },
 });

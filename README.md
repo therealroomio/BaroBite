@@ -1,6 +1,6 @@
-# Foxi - Astro Theme
+# ValeoFx - Astro Theme
 
-Open-source Astro website template with fully responsive, customizable TailwindCSS components.
+Open-source Astro website template for ValeoFx, a full stack web development & SEO agency leveraging AI.
 
 ![just-the-basics](https://oxygenna-themes.b-cdn.net/foxi-astro/foxi.png)
 
@@ -11,7 +11,7 @@ Open-source Astro website template with fully responsive, customizable TailwindC
 
 ### About
 
-Foxi is a free, highly customizable, and production-ready template for Astro, utilizing Tailwind CSS components. Designed with developers in mind, Foxi offers a solid foundation for building modern, high-performance websites quickly and efficiently.
+ValeoFx is a free, highly customizable, and production-ready template for Astro, utilizing Tailwind CSS components. Designed with developers in mind, ValeoFx offers a solid foundation for building modern, high-performance websites quickly and efficiently.
 
 ![just-the-basics](https://oxygenna-themes.b-cdn.net/foxi-astro/pagespeedscore.svg)
 
@@ -50,7 +50,7 @@ After downloading the template, you'll need to install some dependencies. Once t
 
 ### Folder structure
 
-Inside Foxi Astro project, you'll see the following folders and files:
+InsideAiWifiAstro project, you'll see the following folders and files:
 
 ```plaintext
 /
@@ -164,7 +164,7 @@ If you need to enforce a specific theme, you can set the class above as **`mode-
 
 ## License
 
-Copyright © 2024 - Designed & Developed by [Oxygenna](http://www.oxygenna.com/)
+Copyright © 2024 - Designed & Developed by [ValeoFx](http://www.valeofx.com/)
 
 Released under the MIT license.
 
@@ -172,4 +172,4 @@ Released under the MIT license.
 
 You can join our community on [Discord](https://discord.gg/YC5Eup8ZEx)!
 
-[![Hire Us](https://oxygenna-themes.b-cdn.net/foxi-astro/hireus.png)](mailto:info@oxygenna.com,christos@oxygenna.com)
+[![Hire Us](https://valeofx-themes.b-cdn.net/valeofx-astro/hireus.png)](mailto:info@valeofx.com)

@@ -1,0 +1,48 @@
+---
+// Components
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Feature from '../components/blocks/features/FeatureList.astro'
+import FAQ from '../components/blocks/FAQ/Basic.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Import config
+import { configData } from '../config/config'
+
+// SEO
+const SEO = {
+    title: `${configData.siteTitle} | BaroBite Marketing Solutions`,
+    description: 'Transform your guest WiFi into a powerful marketing tool with BaroBite. Automate customer engagement and grow your business through smart WiFi marketing.'
+}
+
+const header = {
+    title: 'Intelligent <strong>WiFi Marketing</strong> Automation',
+    text: 'Turn every WiFi connection into a marketing opportunity with our AI-powered platform.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+    <Hero title={header.title} text={header.text} />
+    
+    <Feature
+        title="Smart WiFi Marketing Features"
+        text="Leverage your guest WiFi for business growth"
+        data={[
+            {
+                title: "Social Login Integration",
+                text: "Let customers connect via their preferred social media platforms"
+            },
+            {
+                title: "Automated Data Collection",
+                text: "Capture valuable customer data with every WiFi login"
+            },
+            {
+                title: "Smart Engagement",
+                text: "Trigger personalized marketing actions based on customer behavior"
+            }
+        ]}
+    />
+
+    <FAQ classes="bg-neutral-50 dark:bg-neutral-900" />
+    <CTA />
+</Layout>

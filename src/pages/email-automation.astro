@@ -1,0 +1,49 @@
+---
+// Components
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import TextImage from '../components/blocks/basic/TextImage.astro'
+import Feature from '../components/blocks/features/FeatureList.astro'
+import SocialProof from '../components/blocks/socialproof/Basic.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Import config
+import { configData } from '../config/config'
+
+// SEO
+const SEO = {
+    title: `${configData.siteTitle} | WiFi-Powered Email Marketing`,
+    description: 'Build and engage your email list through guest WiFi. Convert WiFi users into email subscribers and automate your email marketing with BaroBite.'
+}
+
+const header = {
+    title: 'Grow Your <strong>Email List</strong> Through WiFi',
+    text: 'Build a targeted email list and automate engagement using your guest WiFi network.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+    <Hero title={header.title} text={header.text} />
+    
+    <Feature
+        title="Email Marketing Features"
+        text="Convert WiFi users into email subscribers"
+        data={[
+            {
+                title: "Automated List Building",
+                text: "Grow your email list with every WiFi login"
+            },
+            {
+                title: "Smart Segmentation",
+                text: "Group subscribers based on visit behavior"
+            },
+            {
+                title: "Triggered Campaigns",
+                text: "Send automated emails based on customer actions"
+            }
+        ]}
+    />
+
+    <SocialProof classes="bg-neutral-50 dark:bg-neutral-900" />
+    <CTA />
+</Layout>
