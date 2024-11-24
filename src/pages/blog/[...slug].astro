@@ -20,6 +20,6 @@ const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
-<Layout title={`${entry.data.title} | BaroBite Blog`}>
+<Layout frontmatter={entry.data}>
 	<Content />
 </Layout>
