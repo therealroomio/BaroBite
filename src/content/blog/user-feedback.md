@@ -1,6 +1,6 @@
 ---
 title: 'User feedback on BaroBite'
-pubDate: 2024-05-05T05:00:00Z
+pubDate: '2024-05-05T05:00:00Z'
 description: "Your feedback is crucial to us. We are constantly striving to improve BaroBite based on your suggestions. Here are some of the latest improvements.
 "
 author: 'Eleni K'

@@ -1,6 +1,6 @@
 ---
 title: 'Security Enhancements now here!'
-pubDate: 2024-05-05T05:00:00Z
+pubDate: '2024-04-05T05:00:00Z'
 description: 'The BaroBite mobile app is now available! Manage your tasks and projects on the go with our new mobile app. Stay connected and productive no matter where you are.'
 author: 'Christos P'
 image: '/blog/post-03-cover.png'
